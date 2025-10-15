@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+ 
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title></title>
+    <title> </title>
 </head>
 <body>
      
@@ -19,10 +20,10 @@
             <div class="card-item active">
                        <h1>HELLO, BẠN LÀ....?</h1>
 
-                <input type="Nhập tên của bạn..."class="input-1" name="" id="">
+                <input type="Nhập tên của bạn..."class="input-1" name="" id="text1">
                 <div class="button">
-                        <button onclick="nextSlide()" type="submit" class="btn-sub">Tiếp nèe</button>
-                        <button type="submit" class="btn-sub">EXIT</button>
+                        <button onclick="nextSlide()" type="submit" class="btn-sub" id="enter">Tiếp nèe</button>
+                        <button onclick="ImgAppear" type="submit" id="submit"class="btn-sub">EXIT</button>
                 </div>
             </div>
             <div class="card-item" id="card-item1">
@@ -34,6 +35,41 @@
                 <img src="pt.jpg" alt="" class="img1">
                  
             </div>
+
+                   <div class="card-item">
+                    <div class="textSliding">
+                       <div class="inner">
+                        <div class="classT">Xao chìn Phương Trinh</div>
+                        <div class="classT"> Emm nè.. </div>
+                        <div class="classT">anh muốn nói là </div>
+                        <div class="classT">cảm ơn emm </div>
+                        <div class="classT">đã đến với cuộc sống nminh</div>
+                        <div class="classT">anh mongg</div>
+                        <div class="classT">sẽ được tiếp tục  </div>
+                        <div class="classT">cùng em mãi về sau </div>
+                        <div class="classT">trong cái   </div>
+                        <div class="classT">relationship nì</div>
+                          
+                        
+                    </div>
+                                 
+                       
+                    </div>
+                        
+                        <div class="bar"id="card-itemBar">
+                            
+                            <div class="loadingBar" data-label="Loading.."></div>
+                            <div class="image-cute">
+                        <img src="sticker1.jpg" alt="" class="img-rose">
+                       </div>
+                        </div>
+                         
+                 
+            </div>
+
+
+
+
                <div class="card-item" id="card-item2">
                 <i onclick="textAppear()" class="fa-duotone fa-solid fa-envelope" style="--fa-primary-color: #ea1fe3; --fa-secondary-color: #ea1fe3;" id="icon3"></i> <i onclick="nextSlide()"id="icon-5"class="fa-solid fa-circle-arrow-right" style="color: #dc44c8;"></i>
                 <h3 id="newText">Emmm nhấn vô cái hòm thư nhe:  </h3>
@@ -42,7 +78,7 @@
                         Hôm nay là 20/10, Nhật Minh chúc em có nhiều điều vui và hạnh phúc trong cuộc sống,ngày càng xinh đẹp hơn.
                         <br>Nhật Minh không phải là người giỏi nói ra cảm xúc với suy nghĩ của mình đối với một người mà anhh siuu thích nên là anh để dành những suy nghĩ đó vào
                           bức thư này. Anh biết mình chỉ mới nói chuyện với nhau gần 1 tháng nên còn những thứ mình chưa biết hết về nhau, nhưng mà Nhật Minh cảm ơn em vì đã đến và cho anh cơ hội
-                          tìm hiểu em. Cảm ơn Phương Trinh vì đã là người chia sẻ chuyện vui, buồn, lắng nghe mấy cái chuyện xàm xàm của anh =))) trong những tháng ngày vừa qua. Anh cũng xin lỗi vì đã có những lần
+                          tìm hiểu em. Cảm ơn Phương Trinh vì đã luôn là người chia sẻ chuyện vui, buồn, lắng nghe anh kể chuyện =))) trong những tháng ngày vừa qua. Anh cũng xin lỗi vì đã có những lần
                           anh nói những điều khiến em thấy không vui hoặc bùn qua những câu chuyện mình kể với nhau. Nhưng mà anh thấy cũng vui thiệt vì bình thường cãi nhau, giận nhau như vậy thì mình mới hiểu nhau nhiều hơn
                           là không ai thể hiện cảm xúc ra hết. Nhật Minh biết còn tận 1 năm mới được về nước nhưng mà anh mong mình sẽ vẫn duy trì và phát triển mối quan hệ này và anh cũng sẽ cố gắng để làm điều đó. Nhưng mà Phương Trinh nè, 
                           nếu mình có gì hiểu nhầm hoặc anh làm sai gì thì Phương Trinh đừng nghĩ anh sẽ rời đi hay dừng nói chuyện với em nhe, anh muốn có gì em và anh sẽ nói ra những điều mình không thích ở nhau để mà cả hai sửa đổi chứ
@@ -57,111 +93,8 @@
             </div>
                
             <div class="card-item" id="card-item3">
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-                    <div class="particle"><i class="fa fa-hear-o"></i></div>
-
-                
-                 
-            </div>
-
+            
+                    <h4>Cảm ơnnnn emm đã dành thời gian để xem hết lá thư của anhh</h4>
 
 
         </div>

@@ -20,3 +20,24 @@ function textAppear(){
         display=1;
     }
 }
+
+
+function hearts(){
+  const Page= document.querySelector('.Page');
+  const create =document.createElement('div');
+  create.classList.add('hearts');
+  create.innerHTML='💗';
+  create.style.left=Math.random() *100 +'vw';
+  create.style.animationDuration= Math.random()*3 + 2 +'s';
+    console.log(create);
+  Page.appendChild(create);
+  setTimeout(()=>{
+    create.remove();
+  },3000);
+}
+hearts();
+setInterval(hearts,1000);
+
+//loadingbar
+ 
+ 

@@ -154,3 +154,97 @@
   cursor: pointer;
   color: rgb(238, 181, 228);
 }
+ .hearts{
+  font-size: 23px;
+  font-weight: bold;
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0%);
+  left: 0;
+  animation: fall 1s ease-in infinite;
+ }
+ @keyframes fall{
+  to{
+    transform:translateY(250vh);
+  }
+ }
+ #card-itemBar{
+      width: 850px;
+      position: relative;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 150px;
+      margin-left: 70px;
+      border: 8px solid pink;
+      border-radius: 30px;
+      
+ }
+ #card-itemBar .loadingBar{
+  
+   position:absolute;
+   border-radius: 28px;
+   height: 100%;
+   background-color:rgb(239, 100, 209);
+   animation: progress-animation 20s forwards;
+ }
+ .loadingBar::before{
+   content: attr(data-label);
+   display: flex;
+   align-items:center;
+   position: absolute;
+   left: .7em;
+   top: .5em;
+   bottom: .5em;
+   font-family: cursive;
+   font-weight: 100;
+ }
+ 
+ @keyframes progress-animation{
+  0%{width: 0%;}
+  100%{width: 100%;}
+ }
+  .textSliding {
+    width: 300px; /* Width of one sentence */
+    height: 50px;
+    overflow: hidden;
+    
+    background: #fff;
+    font-family:monospace;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .inner {
+    display: flex;
+    width: calc(300px * 10); /* 11 items * width */
+    animation: slideHorizontal 30s steps(11) infinite;
+  }
+
+  .classT {
+    width: 300px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    box-sizing: border-box;
+    
+  }
+
+  @keyframes slideHorizontal {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-3300px); /* 11 items * 300px */
+    }
+  }
+  .img-rose{
+    width: 190px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 80px;
+    margin-left: 280px;
+
+  }

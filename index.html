@@ -23,7 +23,8 @@
                 <input type="Nhập tên của bạn..."class="input-1" name="" id="text1">
                 <div class="button">
                         <button onclick="nextSlide()" type="submit" class="btn-sub" id="enter">Tiếp nèe</button>
-                        <button onclick="ImgAppear" type="submit" id="submit"class="btn-sub">EXIT</button>
+                        <button onclick="nextSlide()" type="submit" id="exit1"class="btn-sub">EXIT</button>
+                       
                 </div>
             </div>
             <div class="card-item" id="card-item1">
@@ -58,10 +59,15 @@
                         
                         <div class="bar"id="card-itemBar">
                             
-                            <div class="loadingBar" data-label="Loading.."></div>
+                            <div class="loadingBar"data-done="100"></div>
                             <div class="image-cute">
                         <img src="sticker1.jpg" alt="" class="img-rose">
+                        
                        </div>
+                       <div class="popup"  id="pop-up">
+                         <i onclick="nextSlide()" class="fa-solid fa-circle-arrow-right" id="Next1"></i>
+                       </div>
+                        
                         </div>
                          
                  

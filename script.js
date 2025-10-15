@@ -22,6 +22,7 @@ function textAppear(){
 }
 
 
+
 function hearts(){
   const Page= document.querySelector('.Page');
   const create =document.createElement('div');
@@ -40,4 +41,24 @@ setInterval(hearts,1000);
 
 //loadingbar
  
- 
+var counter = 0;
+const popup= document.getElementById('pop-up');
+window.addEventListener("DOMContentLoaded",move=() =>{
+    if (counter == 0) {
+        j = 1;
+        var elem = document.querySelector(".loadingBar");
+        var width = 0;
+        var main = setInterval(frame,380);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(main);
+                
+
+            } else {
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = width + "%";
+            }
+        }
+    }
+});

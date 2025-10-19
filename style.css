@@ -223,7 +223,7 @@
   .inner {
     display: flex;
     width: calc(300px * 10); /* 11 items * width */
-    animation: slideHorizontal 40s steps(11) infinite;
+    animation: slideHorizontal 48s steps(11) infinite;
   }
 
   .classT {
